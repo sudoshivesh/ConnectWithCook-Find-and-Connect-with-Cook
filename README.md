@@ -1,1 +1,1 @@
-[connectwithcook.vercel.app](connectwithcook.com)
+[connectwithcook.com](connectwithcook.vercel.app)
