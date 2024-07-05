@@ -1,0 +1,170 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #e50914; /* Red background color for header */
+    color: white; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    width: 80px; /* Adjust logo size as needed */
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 1.8rem; /* Large font size */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Smaller font size for links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h2 {
+    font-size: 1.5rem; /* Large heading size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select,
+button {
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border don't increase element width */
+}
+
+button {
+    background-color: #e50914; /* Red background for button */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0812; /* Darker shade on hover */
+}
+
+#cookList {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+}
+
+#cookList div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cookList img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#cookList p {
+    margin: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    header img {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Adjust header font size for smaller screens */
+    }
+}
+/* Example CSS */
+#contributeForm {
+    max-width: 600px; /* Adjust form max-width as needed */
+    margin: 0 auto; /* Center align form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#contributeForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contributeForm input[type="text"],
+#contributeForm input[type="email"],
+#contributeForm input[type="tel"],
+#contributeForm select {
+    width: calc(100% - 20px); /* Adjust width of input/select */
+    padding: 10px; /* Padding inside input/select */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px;
+}
+
+#contributeForm button[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contributeForm button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+

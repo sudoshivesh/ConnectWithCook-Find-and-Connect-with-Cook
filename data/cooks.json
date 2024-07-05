@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Ravi",
+        "gender": "Male",
+        "mobileNumber": "9540582095",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Rietu",
+        "gender": "Female",
+        "mobileNumber": "8287472152",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Nirmal",
+        "gender": "Male",
+        "mobileNumber": "9205106700",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Santosh Kumar",
+        "gender": "Male",
+        "mobileNumber": "9289868122",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Prem Thapa",
+        "gender": "Male",
+        "mobileNumber": "8882507649",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Barm Sing",
+        "gender": "Male",
+        "mobileNumber": "8950430206",
+        "sector": "Alpha",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Raja Singh",
+        "gender": "Male",
+        "mobileNumber": "7982880699",
+        "sector": "Beta",
+        "photo": "assets/img/raja_singh.jpg"
+    },
+    {
+        "name": "Sanju Kumar Singh",
+        "gender": "Male",
+        "mobileNumber": "8294744710",
+        "sector": "Beta",
+        "photo": "assets/img/sanju_kumar_singh.jpg"
+    },
+    {
+        "name": "Raja Singh",
+        "gender": "Male",
+        "mobileNumber": "7982880699",
+        "sector": "Gamma",
+        "photo": "assets/img/raja_singh.jpg"
+    },
+    {
+        "name": "Sanju Kumar Singh",
+        "gender": "Male",
+        "mobileNumber": "8294744710",
+        "sector": "Gamma",
+        "photo": "assets/img/sanju_kumar_singh.jpg"
+    },
+    {
+        "name": "Dhirendra Kumar Manjhi",
+        "gender": "Male",
+        "mobileNumber": "6204391463",
+        "sector": "Gamma",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Coming Soon",
+        "gender": "Male",
+        "mobileNumber": "9876543210",
+        "sector": "Delta",
+        "photo": "assets/img/not_available.jpg"
+    },
+    {
+        "name": "Coming Soon",
+        "gender": "Male",
+        "mobileNumber": "9876543210",
+        "sector": "Delta",
+        "photo": "assets/img/not_available.jpg"
+    }
+]

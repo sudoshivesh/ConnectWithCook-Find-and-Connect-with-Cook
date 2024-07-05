@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute - ConnectWithCook</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .form-control-file {
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: #28a745;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #218838;
+        }
+
+        #msg {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo">
+        <h1>ConnectWithCook</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Cook</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-form padd-15">
+            <form name="submit-to-google-sheet" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="Your_Name">Your Name:</label>
+                    <input type="text" id="Your_Name" name="Your_Name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Your_Most_Recent_Sector">Your Most Recent Sector:</label>
+                    <select id="Your_Most_Recent_Sector" name="Your_Most_Recent_Sector" class="form-control" required>
+                        <option value="Alpha">Alpha</option>
+                        <option value="Beta">Beta</option>
+                    <option value="Gamma">Gamma</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Knowledge Park">Knowledge Park</option>
+                    <option value="Omega">Omega</option>
+                    <option value="Omicron">Omicron</option>
+                    <option value="Ecotech">Ecotech</option>
+                    <option value="Techzone">Techzone</option>
+                    <option value="Zeta">Zeta</option>
+                    <option value="Eta">Eta</option>
+                    <option value="Theta">Theta</option>
+                    <option value="Mu">Mu</option>
+                    <option value="Pi">Pi</option>
+                    <option value="Rho">Rho</option>
+                    <option value="Sigma">Sigma</option>
+                    <option value="Phi">Phi</option>
+                    <option value="Chi">Chi</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Your_Email">Your Email:</label>
+                    <input type="email" id="Your_Email" name="Your_Email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Name_of_the_Cook">Name of Cook:</label>
+                    <input type="text" id="Name_of_the_Cook" name="Name_of_the_Cook" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Gender">Gender:</label>
+                    <input type="text" id="Gender" name="Gender" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Mobile_Number">Mobile Number:</label>
+                    <input type="text" id="Mobile_Number" name="Mobile_Number" class="form-control" pattern="[0-9]+" title="Please enter a valid phone number (numeric values only)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Sector_they_will_work">Sector They Will Work:</label>
+                    <textarea id="Sector_they_will_work" name="Sector_they_will_work" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photo: (Optional)</label>
+                    <input type="file" id="photo" name="photo" class="form-control-file">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </main>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyyLp-0WFStXoHsUd5Gi8jqsE1y-btZpR1h-c0bpS15R-8_VmrsDR-9-vHauW2nMbzb/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            // Convert image file to base64
+            const fileInput = document.getElementById('photo');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    formData.append('photo_base64', reader.result);
+                    submitForm(formData);
+                };
+                reader.readAsDataURL(file);
+            } else {
+                submitForm(formData);
+            }
+        });
+
+        function submitForm(formData) {
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => response.text())
+                .then(responseText => {
+                    showSuccess('Message sent successfully');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    showError('Error sending message.');
+                });
+        }
+
+        function showError(errorMessage) {
+            msg.innerHTML = `<div class="alert alert-danger">${errorMessage}</div>`;
+            setTimeout(() => {
+                msg.innerHTML = '';
+            }, 5000); // Display error message for 5 seconds
+        }
+
+        function showSuccess(successMessage) {
+            msg.innerHTML = `<div class="alert alert-success">${successMessage}</div>`;
+            setTimeout(() => {
+                msg.innerHTML = '';
+            }, 5000); // Display success message for 5 seconds
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+</body>
+
+</html>

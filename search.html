@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cook - ConnectWithCook</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo">
+        <h1>ConnectWithCook</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Cook</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Search for a Cook</h2>
+        <label for="sector">Select Sector:</label>
+        <select id="sector" name="sector">
+                <option value="Alpha">Alpha</option>
+                <option value="Beta">Beta</option>
+                <option value="Gamma">Gamma</option>
+                <option value="Delta">Delta</option>
+                <option value="Knowledge Park">Knowledge Park</option>
+                <option value="Omega">Omega</option>
+                <option value="Omicron">Omicron</option>
+                <option value="Ecotech">Ecotech</option>
+                <option value="Techzone">Techzone</option>
+                <option value="Zeta">Zeta</option>
+                <option value="Eta">Eta</option>
+                <option value="Theta">Theta</option>
+                <option value="Mu">Mu</option>
+                <option value="Pi">Pi</option>
+                <option value="Rho">Rho</option>
+                <option value="Sigma">Sigma</option>
+                <option value="Phi">Phi</option>
+                <option value="Chi">Chi</option>
+            <!-- Add all other sectors here -->
+        </select>
+        <button onclick="searchCook()">Search</button>
+        <div id="cookList"></div>
+    </main>
+</body>
+</html>
