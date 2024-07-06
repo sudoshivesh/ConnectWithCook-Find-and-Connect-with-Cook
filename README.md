@@ -78,7 +78,7 @@ Improving the user interface and user experience.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sudoshivesh/ConnectWithCook/blob/sudo/LICENSE) file for details.
 
 ## Contact
 
