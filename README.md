@@ -86,3 +86,10 @@ If you have any questions, feel free to reach out at:
 
 - [Shivesh Shivam](https://www.linkedin.com/in/sudoshivesh)
 - [Aditya Prakash](https://www.linkedin.com/in/echoaditya)
+
+## Snapshot From The Project
+
+![Home](assets/gui/home.png)
+![Search](assets/gui/search.png)
+![Contribute](assets/gui/contribute.png)
+
