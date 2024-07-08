@@ -89,7 +89,7 @@ If you have any questions, feel free to reach out at:
 
 ## Snapshot From The Project
 
-![Home](assets/gui/home.png)
+![Home](assets/gui/Home.png)
 ![Search](assets/gui/search.png)
-![Contribute](assets/gui/contribute.png)
+![Contribute](assets/gui/Contribute.png)
 
